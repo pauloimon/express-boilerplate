@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node ./index.js",
-    "dev": "nodemon ./index.js"
+    "nodemon": "nodemon ./index.js",
+    "eslint": "eslint --ext .js ./",
+    "eslint:fix": "eslint --ext .js --fix ./"
   },
   "author": "Paulo Imon (https://github.com/pauloimon)",
   "license": "MIT",
