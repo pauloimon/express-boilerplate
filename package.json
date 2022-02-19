@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "express-boilerplate",
+  "description": "An Express MVC boilerplate for Node.js applications",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Paulo Imon (https://github.com/pauloimon)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
