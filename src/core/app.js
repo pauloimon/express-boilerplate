@@ -11,6 +11,7 @@ routesResolver(router)
 const app = express()
   .use(cors(corsConfig))
   .use(morgan(morganConfig.format))
+  .use(express.json())
   .use(router)
 
 export default app
