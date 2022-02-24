@@ -15,7 +15,7 @@ An Express MVC boilerplate for Node.js applications.
 2. Transform it into a new repository: `rm -rf ./.git && git init`
 3. Create your environment file: `cp .env.example .env`
 4. Install dependencies: `npm install`
-5. Start the local server: `npm run nodemon`
+5. Start the local server: `npm run dev`
 
 ## Registering a new route
 
