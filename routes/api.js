@@ -1,5 +1,5 @@
-import HelloWorldController from '../src/http/controllers/HelloWorldController.js'
-import anAwesomeMiddleware from '../src/http/middlewares/anAwesomeMiddleware.js'
+import HelloWorldController from '@~/src/http/controllers/HelloWorldController.js'
+import anAwesomeMiddleware from '@~/src/http/middlewares/anAwesomeMiddleware.js'
 
 export default [
   {

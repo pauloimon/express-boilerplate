@@ -1,9 +1,9 @@
 import cors from 'cors'
 import express from 'express'
 import morgan from 'morgan'
-import corsConfig from '../../config/cors.js'
-import morganConfig from '../../config/morgan.js'
-import routesResolver from './routesResolver.js'
+import corsConfig from '@~/config/cors.js'
+import morganConfig from '@~/config/morgan.js'
+import routesResolver from '@~/src/core/routesResolver.js'
 
 const router = express.Router()
 routesResolver(router)

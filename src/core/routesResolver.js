@@ -1,5 +1,5 @@
-import apiRoutes from '../../routes/api.js'
-import webRoutes from '../../routes/web.js'
+import apiRoutes from '@~/routes/api.js'
+import webRoutes from '@~/routes/web.js'
 
 export default router => {
   const routes = [
