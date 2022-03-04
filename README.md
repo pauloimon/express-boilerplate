@@ -8,6 +8,7 @@ An Express MVC boilerplate for Node.js applications.
 - dotenv to load environment variables from `.env` file
 - nodemon to autorestart the local server
 - ESLint with JavaScript Standard Style
+- TypeScript (soon)
 
 ## How to use
 
