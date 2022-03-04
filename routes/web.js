@@ -1,1 +1,3 @@
-export default []
+const webRoutes = []
+
+export { webRoutes }

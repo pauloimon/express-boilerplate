@@ -1,6 +1,6 @@
 import 'dotenv/config'
-import appConfig from '@~/config/app.js'
-import app from '@~/src/core/app.js'
+import { appConfig } from '@~/config/app.js'
+import { app } from '@~/src/core/app.js'
 
 const { name, port } = appConfig
 

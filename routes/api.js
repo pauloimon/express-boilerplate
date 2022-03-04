@@ -1,7 +1,7 @@
-import HelloWorldController from '@~/src/http/controllers/HelloWorldController.js'
-import anAwesomeMiddleware from '@~/src/http/middlewares/anAwesomeMiddleware.js'
+import { HelloWorldController } from '@~/src/http/controllers/HelloWorldController.js'
+import { anAwesomeMiddleware } from '@~/src/http/middlewares/anAwesomeMiddleware.js'
 
-export default [
+const apiRoutes = [
   {
     methods: ['GET'],
     path: '/hello-world',
@@ -9,3 +9,5 @@ export default [
     action: HelloWorldController.handle
   }
 ]
+
+export { apiRoutes }

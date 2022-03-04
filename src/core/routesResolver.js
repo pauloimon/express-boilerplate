@@ -1,7 +1,7 @@
-import apiRoutes from '@~/routes/api.js'
-import webRoutes from '@~/routes/web.js'
+import { apiRoutes } from '@~/routes/api.js'
+import { webRoutes } from '@~/routes/web.js'
 
-export default router => {
+function routesResolver (router) {
   const routes = [
     ...apiRoutes.map(route => {
       route.path = '/api' + route.path
@@ -24,3 +24,5 @@ export default router => {
       })
   })
 }
+
+export { routesResolver }
