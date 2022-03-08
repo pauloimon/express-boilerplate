@@ -3,11 +3,10 @@
   "name": "express-boilerplate",
   "description": "An Express MVC boilerplate for Node.js applications",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "npm run prod",
-    "dev": "cross-env NODE_ENV=development nodemon ./index.js",
-    "prod": "cross-env NODE_ENV=production node ./index.js",
+    "dev": "cross-env NODE_ENV=development nodemon --exec sucrase-node ./index.js",
+    "prod": "cross-env NODE_ENV=production sucrase-node ./index.js",
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --fix ./"
   },
