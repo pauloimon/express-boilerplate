@@ -1,9 +1,9 @@
 import cors from 'cors'
 import express from 'express'
 import morgan from 'morgan'
-import { corsConfig } from '@~/config/cors.js'
-import { morganConfig } from '@~/config/morgan.js'
-import { routesResolver } from '@~/src/core/routesResolver.js'
+import { corsConfig } from '@~/config/cors'
+import { morganConfig } from '@~/config/morgan'
+import { routesResolver } from '@~/src/core/routesResolver'
 
 function createApp () {
   const router = express.Router()

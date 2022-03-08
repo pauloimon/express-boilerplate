@@ -1,5 +1,5 @@
-import { HelloWorldController } from '@~/src/http/controllers/HelloWorldController.js'
-import { myAwesomeMiddleware } from '@~/src/http/middlewares/myAwesomeMiddleware.js'
+import { HelloWorldController } from '@~/src/http/controllers/HelloWorldController'
+import { myAwesomeMiddleware } from '@~/src/http/middlewares/myAwesomeMiddleware'
 
 const apiRoutes = [
   {
