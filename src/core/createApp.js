@@ -1,8 +1,8 @@
 import cors from 'cors'
 import express from 'express'
 import morgan from 'morgan'
-import { corsConfig } from '@~/config/cors'
-import { morganConfig } from '@~/config/morgan'
+import { corsConfig } from '@~/src/config/cors'
+import { morganConfig } from '@~/src/config/morgan'
 import { routesResolver } from '@~/src/core/routesResolver'
 
 function createApp () {

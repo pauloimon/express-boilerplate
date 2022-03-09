@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { appConfig } from '@~/config/app'
+import { appConfig } from '@~/src/config/app'
 import { createApp } from '@~/src/core/createApp'
 
 const { name, port } = appConfig

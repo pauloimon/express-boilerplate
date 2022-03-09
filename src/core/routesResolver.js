@@ -1,5 +1,5 @@
-import { apiRoutes } from '@~/routes/api'
-import { webRoutes } from '@~/routes/web'
+import { apiRoutes } from '@~/src/routes/api'
+import { webRoutes } from '@~/src/routes/web'
 
 function routesResolver (router) {
   const routes = [
