@@ -20,12 +20,12 @@ An Express MVC boilerplate for Node.js applications.
 
 ## Registering a new route
 
-There are two route files present on `./routes` directory.
+There are two route files present on `./src/routes` directory.
 The `web.js` file must be used to register Web routes which returns HTML.
 The `api.js` file must be used to register API routes which returns JSON or any other data transfer format.
-All routes registered on `./routes/api.js` will be automatically preppended with `/api`.
+All routes registered on `./src/routes/api.js` will be automatically preppended with `/api`.
 
-So, to register a new route you need to edit a route file inside the `./routes` directory and append an object with the following properties:
+So, to register a new route you need to edit a route file inside the `./src/routes` directory and append an object with the following properties:
 
 | Property      | Type           | Required | Examples                                     |
 |:-------------:|:--------------:|:--------:|----------------------------------------------|
@@ -37,7 +37,7 @@ So, to register a new route you need to edit a route file inside the `./routes` 
 e.g.
 
 ```js
-// File: ./routes/api.js
+// File: ./src/routes/api.js
 import { MyAwesomeController } from '@~/src/http/controllers/MyAwesomeController'
 
 const apiRoutes = [
