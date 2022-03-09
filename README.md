@@ -35,24 +35,29 @@ So, to register a new route you need to edit a route file inside the `./routes` 
 | `action`      | `Function`     | Yes      | `(request, response) => response.send('OK')` |
 
 e.g.
-```js
-// ./routes/api.js
-import MyAwesomeController from '../src/http/controllers/MyAwesomeController.js'
 
-export default [
+```js
+// File: ./routes/api.js
+import { MyAwesomeController } from '@~/src/http/controllers/MyAwesomeController'
+
+const apiRoutes = [
   {
     methods: ['GET'],
     path: '/my/awesome/route',
     action: MyAwesomeController.handle
   }
 ]
+
+export { apiRoutes }
 ```
 
 ```js
-// ./src/http/controllers/MyAwesomeController.js
-export default class {
+// File: ./src/http/controllers/MyAwesomeController.js
+class MyAwesomeController {
   static handle (request, response) {
-    return response.json({ success: true })
+    response.json({ success: true })
   }
 }
+
+export { MyAwesomeController }
 ```
