@@ -1,5 +1,5 @@
 function myAwesomeMiddleware (request, response, next) {
-  console.log('> I\'m an awesome middleware :)')
+  console.log('I\'m an awesome middleware :)')
 
   next()
 }
