@@ -12,11 +12,10 @@ An Express MVC boilerplate for Node.js applications.
 
 ## How to use
 
-1. Clone this repository: `git clone git@github.com:pauloimon/express-boilerplate.git && cd ./express-boilerplate`
-2. Transform it into a new repository: `rm -rf ./.git && git init`
-3. Create your environment file: `cp .env.example .env`
-4. Install dependencies: `npm install`
-5. Start the local server: `npm run dev`
+1. Click [here](https://github.com/pauloimon/express-boilerplate/generate) to generate a new project
+2. Create your `.env` file
+3. Install the dependencies: `npm install`
+4. Start the local server: `npm run dev`
 
 ## Registering a new route
 
