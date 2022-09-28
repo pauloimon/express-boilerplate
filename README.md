@@ -26,12 +26,12 @@ All routes registered on `./src/routes/api.js` will be automatically preppended 
 
 So, to register a new route you need to edit a route file inside the `./src/routes` directory and append an object with the following properties:
 
-| Property      | Type           | Required | Examples                                     |
-|:-------------:|:--------------:|:--------:|----------------------------------------------|
-| `methods`     | `Array/String` | Yes      | `[OPTIONS]`, `['GET', 'POST']`, `'*'`        |
-| `path`        | `String`       | Yes      | `/my/awesome/route`                          |
-| `middlewares` | `Array`        | No       | `[(request, response, next) => next()]`      |
-| `action`      | `Function`     | Yes      | `(request, response) => response.send('OK')` |
+| Property      | Type              | Required | Examples                                     |
+|:-------------:|:-----------------:|:--------:|----------------------------------------------|
+| `methods`     | `Array \| String` | Yes      | `['OPTIONS']`, `['GET', 'POST']`, `'*'`      |
+| `path`        | `String`          | Yes      | `'/my/awesome/route'`                        |
+| `middlewares` | `Array`           | No       | `[(request, response, next) => next()]`      |
+| `action`      | `Function`        | Yes      | `(request, response) => response.send('OK')` |
 
 e.g.
 
